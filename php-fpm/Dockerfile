@@ -195,7 +195,7 @@ RUN if [ ${INSTALL_TOKENIZER} = true ]; then \
 #####################################
 # SQL SERVER:
 #####################################
-ARG MSSQL=false
+ARG MSSQL=true
 RUN if [ ${MSSQL} = true ]; then \
 
     #####################################
