@@ -10,10 +10,10 @@
 #    https://hub.docker.com/r/laradock/workspace/tags/
 #
 
-#FROM laradock/workspace:1.3 # placeholder. Need change after new image would be built.
-FROM alivecorpse/workspace:latest
+#Use this customize workspace by https://github.com/AliveCorpse/laradock with running php 7.1
+FROM arbninjas/workspace:latest
 
-MAINTAINER Melchor Abcede <melchor.abcede@loannotify.com>
+MAINTAINER Melchor O. Abcede <melchacbede@gmail.com>
 
 #
 #--------------------------------------------------------------------------
@@ -75,10 +75,12 @@ RUN if [ ${COMPOSER_GLOBAL_INSTALL} = true ]; then \
     composer global install \
 ;fi
 
+
 #####################################
 # Crontab
 #####################################
 USER root
+
 
 COPY ./crontab /var/spool/cron/crontabs
 
