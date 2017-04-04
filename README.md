@@ -6,16 +6,16 @@ clone the laradock-custom in your root directory. Dont forget to add this in the
 ##To start containers:
 docker-compose up -d apache2 php-fpm workspace redis 
 
-##To stop containers:
+## To stop containers:
 docker-compose stop
 
-##To delete containers:
+## To delete containers:
 docker-compose down
 
-##To access the workspace
+## To access the workspace
 docker-compose exec workspace bash
 
-
+To know more about the laradock commands, please see the official documentation below.
 
 > Use Docker first and learn about it later.
 
