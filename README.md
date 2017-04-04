@@ -3,7 +3,7 @@ This is a custom laradock workspace build php7.1 with ms sql tools support.
 
 Clone the laradock-custom in your root directory. Dont forget to add this in the .gitignore.After cloning, cd to the laradock directory, this is where you will run docker compose.
 ```
-git submodule https://github.com/chkm8/laradock-custom.git
+git submodule add https://github.com/chkm8/laradock-custom.git
 ```
 ## To start containers:
 ```
