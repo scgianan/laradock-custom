@@ -1,20 +1,28 @@
-# Laradock
+# Custom Laradock
 This is a custom laradock workspace build php7.1 with ms sql tools support.
 
 Clone the laradock-custom in your root directory. Dont forget to add this in the .gitignore.After cloning, cd to the laradock directory, this is where you will run docker compose.
-
-
+```
+git submodule https://github.com/chkm8/laradock-custom.git
+```
 ## To start containers:
+```
 docker-compose up -d apache2 php-fpm workspace redis 
-
+```
 ## To stop containers:
+```
 docker-compose stop
+```
 
 ## To delete containers:
+```
 docker-compose down
+```
 
 ## To access the workspace
+```
 docker-compose exec workspace bash
+```
 
 To know more about the laradock commands, please see the official documentation below.
 
